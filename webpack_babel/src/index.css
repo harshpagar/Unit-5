@@ -1,0 +1,15 @@
+* {
+    margin:0px;
+}
+#navbar {
+    color:rgb(9, 12, 1);
+    padding:10px;
+    font-size: 22px;
+    text-align:center;
+    background-color: rgb(212, 192, 9);
+}
+img {
+    margin-left: 70%;
+    width: 100px;
+    height: 100px;
+}
