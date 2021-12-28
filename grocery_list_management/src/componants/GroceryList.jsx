@@ -1,15 +1,11 @@
 import React from "react";
 
-export const GroceryList = ({title}) =>
-{
-    const deleteButton = (e) => {
-      
-} 
+export const GroceryList = ({ title, status, id, deleteItem }) =>{
 
     return(
          <>
             <div>{title}</div>
-            <button onClick={ () => deleteButton(title)}>Delete</button>
+            <button onClick={ () => {deleteItem(id);}}>Delete</button>
          </>
     )
 }
