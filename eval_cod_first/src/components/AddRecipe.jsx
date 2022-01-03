@@ -4,7 +4,7 @@ import { useState } from "react";
 export const AddRecipe = () => {
   const [data, setData] = useState({});
 
-  const handleinput = (e) => {
+  const handle = (e) => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
   };
@@ -26,40 +26,40 @@ export const AddRecipe = () => {
 
   return (
     <div>
-      <h3 class ="heading"> Add Receipe </h3>
-      <div class = "short"onSubmit={AddData} method="POST">
+      <h3 className ="heading"> Add Receipe </h3>
+      <div className = "short" onSubmit={AddData} method="POST">
         <input
           required
           type="text"
           name="title"
           placeholder="Enter Title"
-          onChange={handleinput}
+          onChange={handle}
         />
         <textarea
           rows={3}
           type="text"
           name="ingredients"
           placeholder="Enter ingredients"
-          onChange={handleinput}
+          onChange={handle}
         />
         <input
           type="text"
           name="timetocook"
           placeholder="time to cook"
-          onChange={handleinput}
+          onChange={handle}
         />
         <input
           type="text"
           name="img"
           placeholder="Enter image link"
-          onChange={handleinput}
+          onChange={handle}
         />
         <textarea
           rows={3}
           type="text"
           name="title"
           placeholder="Enter instruction"
-          onChange={handleinput}
+          onChange={handle}
         />
         <input type="submit" />
       </div>
